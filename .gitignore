@@ -12,6 +12,21 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env*.local
+
+# Testing
+coverage
+*.lcov
+
+# Deployment
+.vercel
+.netlify
+
+# OS
+Thumbs.db
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
