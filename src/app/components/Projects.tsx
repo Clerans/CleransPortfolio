@@ -13,44 +13,77 @@ import { motion } from "motion/react";
 
 const projects = [
   {
-    title: "Global Country Insights Dashboard",
+    title: "MegaShop Mobile App",
     description:
-      "An interactive web dashboard providing country information, real-time weather data, and COVID-19 statistics using multiple public REST APIs with dynamic data visualization.",
+      "A full-stack mobile e-commerce application with secure JWT authentication, product browsing, cart management, and a complete RESTful backend.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1080&q=80",
-    tags: ["HTML", "CSS", "JavaScript", "REST APIs", "Chart.js"],
-    githubUrl: "https://github.com/Clerans/global-country-dashboard-group",
+      "https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=1080&q=80",
+    tags: ["React Native", "Node.js", "Express", "PostgreSQL"],
+    githubUrl: "https://github.com/Clerans/megashop-app",
     liveUrl: "#",
-    color: "from-blue-500 to-cyan-500",
+    color: "from-blue-600 to-indigo-600",
   },
   {
     title: "MC Mobiles App",
     description:
-      "A React Native mobile application for browsing and purchasing mobile devices, featuring a clean UI, product management, and backend integration.",
+      "A React Native mobile shop application for buying and selling devices, featuring a responsive UI and secure Node.js backend integration.",
     image:
-      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1080&q=80",
-    tags: ["React Native", "Expo", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com/Clerans/MC-MOBILE-APP",
+      "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=1080&q=80",
+    tags: ["React Native", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/Clerans/MC-MOBILE-APP.git",
     liveUrl: "#",
     color: "from-purple-500 to-pink-500",
   },
   {
+    title: "MC Mobiles Website",
+    description:
+      "A responsive e-commerce platform built with React, featuring dynamic product filtering, search functionality, and mobile-first design.",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1080&q=80",
+    tags: ["React.js", "JavaScript", "CSS"],
+    githubUrl: "https://github.com/Clerans/MCmobiles-Website--React.git",
+    liveUrl: "#",
+    color: "from-pink-500 to-rose-500",
+  },
+  {
+    title: "Global Country Insights",
+    description:
+      "Collaborative dashboard displaying real-time country data, weather, and COVID-19 statistics using multiple public REST APIs and Chart.js.",
+    image:
+      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1080&q=80",
+    tags: ["HTML", "CSS", "JavaScript", "REST APIs"],
+    githubUrl: "https://github.com/Clerans/global-country-dashboard-group.git",
+    liveUrl: "#",
+    color: "from-blue-500 to-cyan-500",
+  },
+  {
     title: "Weather Web Application",
     description:
-      "A responsive web application that displays real-time weather information, including temperature, humidity, and wind speed using a public weather API.",
+      "Dynamic weather application providing real-time updates on temperature, humidity, and wind speed through public API integration.",
     image:
-      "https://images.unsplash.com/photo-1501973801540-537f08ccae7b?auto=format&fit=crop&w=1080&q=80",
+      "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=1080&q=80",
     tags: ["HTML", "CSS", "JavaScript", "Weather API"],
     githubUrl: "https://github.com/Clerans/Weather-Web-Application",
     liveUrl: "#",
     color: "from-cyan-500 to-blue-500",
   },
   {
+    title: "GPA Calculator App",
+    description:
+      "A cross-platform Flutter application for calculating university GPA with subject input validation and an intuitive student-focused UI.",
+    image:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1080&q=80",
+    tags: ["Flutter", "Dart"],
+    githubUrl: "https://github.com/Clerans/GPA-calculator.git",
+    liveUrl: "#",
+    color: "from-teal-500 to-emerald-500",
+  },
+  {
     title: "Library Management System",
     description:
-      "A Java-based desktop application designed to manage library operations such as book inventory, issuing, and returns using a modular architecture.",
+      "Java-based desktop application for complete library operations including book inventory, issuing, and returns with MySQL database integration.",
     image:
-      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1080&q=80",
+      "https://images.unsplash.com/photo-1507842217121-9e49dd9dd327?auto=format&fit=crop&w=1080&q=80",
     tags: ["Java", "JavaFX", "MySQL"],
     githubUrl: "https://github.com/Clerans/OOP-mini-project",
     liveUrl: "#",
@@ -59,24 +92,13 @@ const projects = [
   {
     title: "Student Grading System",
     description:
-      "A C-based console application for managing student grades, including data input, grade calculation, and result generation using core programming concepts.",
+      "C-based console application for efficient student grade management, mark entry, and result calculation using core programming concepts.",
     image:
-      "https://images.unsplash.com/photo-1584697964190-fd6d97e6b84b?auto=format&fit=crop&w=1080&q=80",
-    tags: ["C", "File Handling", "Data Structures"],
+      "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=1080&q=80",
+    tags: ["C", "VS Code"],
     githubUrl: "https://github.com/Clerans/Student-Grading-System",
     liveUrl: "#",
     color: "from-orange-500 to-yellow-500",
-  },
-  {
-    title: "MC Mobile Website",
-    description:
-      "A responsive e-commerce website for browsing mobile devices, featuring product listings, filtering, and mobile-first UI design principles.",
-    image:
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1080&q=80",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-    githubUrl: "https://github.com/Clerans/Mobileshop-Website",
-    liveUrl: "#",
-    color: "from-pink-500 to-rose-500",
   },
 ];
 
