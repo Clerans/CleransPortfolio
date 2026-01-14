@@ -83,7 +83,7 @@ const projects = [
     description:
       "Java-based desktop application for complete library operations including book inventory, issuing, and returns with MySQL database integration.",
     image:
-      "https://images.unsplash.com/photo-1507842217121-9e49dd9dd327?auto=format&fit=crop&w=1080&q=80",
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1080&q=80",
     tags: ["Java", "JavaFX", "MySQL"],
     githubUrl: "https://github.com/Clerans/OOP-mini-project",
     liveUrl: "#",
