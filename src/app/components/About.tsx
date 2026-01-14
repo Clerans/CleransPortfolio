@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Code2, Rocket, Users, Award } from "lucide-react";
 import { motion } from "motion/react";
+import profileImage from "../../assets/profile.jpg";
 
 const stats = [
   { icon: Code2, label: "Academic & Personal Projects", value: "10+" },
@@ -44,7 +45,7 @@ export function About() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1666723043169-22e29545675c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+                  src={profileImage}
                   alt="Developer workspace"
                   className="w-full h-auto rounded-2xl"
                 />
@@ -69,7 +70,7 @@ export function About() {
                 <span className="text-cyan-400">
                   BIT (Hons) in Networking and Mobile Computing
                 </span>{" "}
-                at <span className="text-blue-400">Horizon Campus, Malabe</span>. 
+                at <span className="text-blue-400">Horizon Campus, Malabe</span>.
                 I have a strong interest in full-stack web and mobile application development.
               </p>
 
