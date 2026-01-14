@@ -3,7 +3,7 @@
 A modern, responsive, and interactive personal portfolio website built to showcase my journey as a **Full Stack Developer** and **BIT (Hons) Undergraduate**. This project highlights my technical skills, academic achievements, research, and software development projects.
 
 ![Portfolio Preview](src/assets/Landingpage.png)
-*(Note: You can update this image path to a screenshot of the landing page)*
+*landing page*
 
 ## 🚀 Tech Stack
 
