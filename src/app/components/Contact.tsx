@@ -1,4 +1,5 @@
 import { Mail, Github, Linkedin, Send, MapPin, Phone } from "lucide-react";
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -6,9 +7,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { motion } from "motion/react";
 
 export function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Message sent! (Demo only)");
+    const { name, email, subject, message } = formData;
+
+    // Construct the mailto URL
+    const mailtoLink = `mailto:michaelclerans03@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+
+    // Open default email client
+    window.location.href = mailtoLink;
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
   const socialLinks = [
@@ -156,6 +180,8 @@ export function Contact() {
                       id="name"
                       placeholder="Your name"
                       required
+                      value={formData.name}
+                      onChange={handleChange}
                       className="bg-slate-950/50 border-slate-700 text-white"
                     />
                   </div>
@@ -169,6 +195,8 @@ export function Contact() {
                       type="email"
                       placeholder="your@email.com"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                       className="bg-slate-950/50 border-slate-700 text-white"
                     />
                   </div>
@@ -181,6 +209,8 @@ export function Contact() {
                       id="subject"
                       placeholder="Message subject"
                       required
+                      value={formData.subject}
+                      onChange={handleChange}
                       className="bg-slate-950/50 border-slate-700 text-white"
                     />
                   </div>
@@ -194,6 +224,8 @@ export function Contact() {
                       placeholder="Write your message here..."
                       rows={5}
                       required
+                      value={formData.message}
+                      onChange={handleChange}
                       className="bg-slate-950/50 border-slate-700 text-white resize-none"
                     />
                   </div>
