@@ -59,7 +59,7 @@ export function Education() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-4 text-gradient">Education, Research & Qualifications</h2>
+          <h2 className="mb-4 text-5xl font-bold text-gradient">Education, Research & Qualifications</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
             My academic journey, research contributions, and professional certifications
           </p>

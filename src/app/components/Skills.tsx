@@ -82,7 +82,7 @@ export function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-4 text-center text-gradient">Skills & Expertise</h2>
+          <h2 className="mb-4 text-center text-5xl font-bold text-gradient">Skills & Expertise</h2>
           <p className="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
             Technologies and tools I use to build modern web and mobile applications
           </p>

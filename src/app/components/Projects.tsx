@@ -121,7 +121,7 @@ export function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="mb-4 text-center text-gradient">Projects</h2>
+          <h2 className="mb-4 text-center text-5xl font-bold text-gradient">Projects</h2>
           <p className="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
             Academic, personal, and freelance projects demonstrating practical
             software development skills
